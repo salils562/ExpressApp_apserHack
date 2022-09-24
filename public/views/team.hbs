@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/team.css">
+</head>
+
+<body class="bg-light">
+    <nav class="d-flex">
+        <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#mission">About</a></li>
+            <li><a href="team.html">Founders</a></li>
+        </ul>
+    </nav>
+    <section class="bg-dark text-light about">
+        <div class="container mx-auto text-center">
+            <div class="who">
+                <h1 id="whoarewe">
+                    Who are we?
+                </h1>
+                <div class="aboutUs">
+                    <p>Likhbee is an online community of young professionals that helps young minds by providing them support of quality work & materials. Apart from that, we foster a collaborative workplace that strives to create the best experience for freelancers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team mx-2 my-5">
+        <div class="our-team bg-primary text-light text-center d-flex align-items-center justify-content-center">
+            <h1>Our Team</h1>
+        </div>
+        <div class="head my-3">
+            <p class="text-center">These are the people who worked together as a team and made it all possible.</p>
+        </div>
+        <div class="cards text-center">
+            <div class="card-items d-flex justify-content-around flex-wrap my-2">
+                <div class="card-items-child">
+                    <img src="images/team/salil.jpg" alt="image" class="team-img">
+                    <p class="names">Salil Sharma</p>
+                    <p>MERN Stack Developer || UI-UX Designer</p>
+                    <a href="https://www.linkedin.com/in/salil-sharma-327153205" target="_blank"><button class="btn btn-primary btn-sm">See profile</button></a>
+                </div>
+                <div class="card-items-child">
+                    <img src="images/team/pulkit.jpg" alt="image" class="team-img">
+                    <p class="names">Pulkit Dubey</p>
+                    <p>App developer || Flutter Master</p>
+                    <a href="https://www.linkedin.com/in/pulkit-dubey-75b703224" target="_blank"><button class="btn btn-primary btn-sm">See profile</button></a>
+                </div>
+                <div class="card-items-child">
+                    <img src="images/team/divyanshi.jpg" alt="image" class="team-img">
+                    <p class="names">Divyanshi Gupta</p>
+                    <p>Web developer || UI-UX Designer</p>
+                    <a href="https://www.linkedin.com/in/divyanshi-gupta-327466218" target="_blank"><button class="btn btn-primary btn-sm">See profile</button></a>
+                </div>
+            </div>
+            <div class="card-items d-flex justify-content-around flex-wrap">
+                <div class="card-items-child">
+                    <img src="images/team/pragya.jpg" alt="image" class="team-img">
+                    <p class="names">Pragya Shrivastava</p>
+                    <p>Graphic Designer</p>
+                    <a href="https://www.linkedin.com/in/pragya-shrivastava-7a220a225" target="_blank"><button class="btn btn-primary btn-sm">See profile</button></a>
+                </div>
+                <div class="card-items-child">
+                    <img src="images/team/mukti.jpg" alt="image" class="team-img">
+                    <p class="names">Mukri Markam</p>
+                    <p>Graphic Designer</p>
+                    <a href="https://www.linkedin.com/in/mukti-markam-0896b41b1" target="_blank"><button class="btn btn-primary btn-sm">See profile</button></a>
+                </div>
+                <div class="card-items-child">
+                    <img src="images/team/ammeshapatel.jpg" alt="image" class="team-img">
+                    <p class="names">Shivi Shukla</p>
+                    <p>Media & Content || Graphic Designer</p>
+                    <a href="https://www.linkedin.com/in/shivi-shukla-48b1b7228" target="_blank"><button class="btn btn-primary btn-sm">See profile</button></a>
+                </div>
+            </div>
+            <div class="card-items d-flex justify-content-around flex-wrap">
+                <div class="card-items-child">
+                    <img src="images/team/yashwari.jpg" alt="image" class="team-img">
+                    <p class="names">Yashwari Mohan</p>
+                    <p>Marketing And Management</p>
+                    <a href="https://www.linkedin.com/in/pragya-shrivastava-7a220a225" target="_blank"><button class="btn btn-primary btn-sm">See profile</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-5">
+        <p class="text-capitalize">copyright &copy; all rights reserved </p>
+      </footer>
+      <script>
+        let move=document.getElementById('whoarewe');
+        let text="Who are we?";
+        let i=0;
+        let adder="";
+        let interval=setInterval(()=>{
+          if(i<text.length){
+              adder+=text[i];
+              move.innerHTML=adder;
+              i++;
+            } 
+            else{
+           clearInterval(interval);
+            } 
+        },100);
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

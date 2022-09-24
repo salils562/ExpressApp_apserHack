@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #5db4f6;
+    height: 60px;
+}
+.logo{
+    width: 90px;
+    height: 85px;
+    border-radius: 50%;
+    transform: rotate(340deg);
+    margin: 3px 8px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 10px;
+}
+nav ul li{
+    margin: 0px 10px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 5px;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* singup css */
+.singup{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 50%;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.items input{
+    padding-left: 10px;
+    margin: 10px;
+    width: 25rem;
+    height: 2rem;
+}
+/* Team page css */
+.about{
+    padding: 140px 0px;
+}
+.who h1{
+    font-size: 3rem;
+}
+.aboutUs p{
+    font-size: 1.4rem;
+}
+.our-team{
+    border-radius: 5px;
+    height: 70px;
+}
+.our-team h1{
+    font-size: 3rem;
+}
+.head p{
+    font-size: 1.2rem;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+.names{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.card-items-child{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px 8px;
+}
+.team-img{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40vh;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 10vh;
+}
+footer p{
+    padding-top: 15px;
+}
+@media only screen and (max-width:500px){
+    nav{
+        height: 50px;
+    }
+    nav ul{
+        margin-left: -20px;
+    }
+    .logo{
+        width: 75px;
+        height: 75px;
+        margin: 3px 5px;
+    }
+    nav ul li{
+        margin: 0px 5px;
+    }
+    nav ul li a{
+        font-size: 0.8rem;
+    }
+    .card-items-child{
+        width: auto;
+    }
+    .team-img{
+        width: 90vw;
+    }
+    .aboutUs p{
+        font-size: 1rem;
+    }
+    footer{
+        height: 8vh;
+    }
+    footer p{
+        padding-top: 25px;
+    }
+}

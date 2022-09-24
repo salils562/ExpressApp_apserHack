@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+footer{
+    margin-top: auto;
+}
+#clients{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.items{
+    margin-bottom: 20px;
+}
+.details-child{
+    display: block;
+    font-weight: bold;
+}
